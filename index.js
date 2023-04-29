@@ -11,6 +11,12 @@ for (let i=1; i<=16; i++) {
         div.appendChild(divCell);
     }
 }
-//create div that will act as row
-//create 16 divs within that div to act as cells
-//loop 16 times to add div to container div
+
+const divCells = document.querySelectorAll('.cell')
+for (let i=0; i<divCells.length; i++) {
+    divCells[i].addEventListener('mouseover', (e)=> changeColor(e))
+};
+
+function changeColor(e) {
+    e.target.style.background = 'black';
+}
