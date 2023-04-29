@@ -9,3 +9,11 @@
     border-width:1px;
 }
 
+.container {
+    padding: 20px;
+}
+
+button.reset {
+    margin: 20px;
+    padding: 5px;
+}

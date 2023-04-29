@@ -20,3 +20,12 @@ for (let i=0; i<divCells.length; i++) {
 function changeColor(e) {
     e.target.style.background = 'black';
 }
+
+const resetButton = document.querySelector('button.reset')
+resetButton.addEventListener('click', resetGrid);
+
+function resetGrid() {
+   const gridDimension = Number(prompt("Provide grid dimensions", 16));
+
+   const oldGrid = document.querySelectorAll('.row');
+}
