@@ -4,6 +4,7 @@ const containerDiv = document.querySelector('.container');
 newGrid(16);
 
 function newGrid(dimension) {
+    if (dimension > 100) {dimension = 100};
     for (let i=1; i<=dimension; i++) {
         const div = document.createElement('div')
         div.classList.add('row');
@@ -27,7 +28,7 @@ function changeColor(e) {
 }
 
 function resetGrid() {
-   const gridDimension = prompt("Provide grid dimensions", 16);
+   const gridDimension = prompt("Provide grid dimensions (max. 100)", 16);
    if (gridDimension === null) return;
    else {
     const oldGrid = document.querySelectorAll('.row');
